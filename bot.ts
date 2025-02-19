@@ -4,7 +4,8 @@ import {
   MemoryKvStore,
   text,
   Image,
-  link
+  link,
+  mention
 } from "@fedify/botkit";
 
 import { DenoKvMessageQueue, DenoKvStore } from "@fedify/fedify/x/denokv";
@@ -40,7 +41,7 @@ bot.onMention = async (session, message) => {
   const imageUrl = `https://gulfof.mapquest.com/img/map?theme=dark&name=${encodedText}`;
   
   await message.reply(
-    text``,
+    text`${mention(message.actor)}`,
     {
       attachments: [
         new Image({

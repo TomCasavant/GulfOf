@@ -23,6 +23,10 @@ const bot = createBot({
       "@tom@tomkahe.com",
       "https://tomkahe.com/@tom",
     ),
+    "Source Code": link(
+    	"tomcasavant/GulfOf",
+    	"https://github.com/TomCasavant/GulfOf",
+    ),
     "Powered by": link("BotKit", "https://botkit.fedify.dev/"),
   },
   icon: new URL(

@@ -1,0 +1,18 @@
+{
+  "imports": {
+    "@fedify/botkit": "jsr:@fedify/botkit@^0.1.1",
+    "@fedify/fedify": "jsr:@fedify/fedify@^1.4.2"
+  },
+  "unstable": [
+    "temporal"
+  ],
+  "entrypoint": "bot.ts",
+  "deploy": {
+    "project": "87a4ca6b-c33b-4a8e-ae91-c58dd818ed11",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "bot.ts"
+  }
+}
